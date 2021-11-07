@@ -8,7 +8,6 @@
     height: 535px;
     width: 328px;
     padding-bottom: 20px;
-    margin-left: 16px;
 }
 
 .Cart h2 {
@@ -52,7 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 328px;
+    width: 308px;
     border-bottom: solid #E0E0E0 2px ;
 }
 
@@ -106,10 +105,46 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .Cart {
+        width: 405px;
+    }
+
+    .Cart h2 {
+        width: 385px;
+    }
+
+    .cartProductsContainer {
+        width: 380px;
+    }
+
+    .cartProduct {
+        width: 380px;
+    }
+
+    .cartProduct img{}
+
+    .cartProduct .nameCategory {}
+
+    .cartProduct h3 {}
+
+    .cartProduct span {}
+
+    .Cart .cartProduct button {}
+    
+    .Cart .price b{
+        margin-right: 300px;
+    }
+
+    .Cart .cleanCart {
+        width: 380px;
+    }
+}
+
+@media only screen and (min-width: 960px){
     .Cart {
         width: 350px;
-        margin: 30px 50px 0 0;
+        margin: 0 30px 0 0;
     }
 
     .Cart h2 {
@@ -135,14 +170,4 @@
     .cartProduct {
         width: 365px;
     }
-
-    .cartProduct img{}
-
-    .cartProduct .nameCategory {}
-
-    .cartProduct h3 {}
-
-    .cartProduct span {}
-
-    .Cart .cartProduct button {}
 }

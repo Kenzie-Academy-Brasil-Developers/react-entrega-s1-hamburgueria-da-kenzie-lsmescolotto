@@ -1,0 +1,94 @@
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 139px;
+    background-color: #f5f5f5;
+  }
+  
+  .App-header h1 {
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  
+  .App-header h1 b {
+    color:#333333;
+    font-size: 26px;
+  }
+  
+  .searchBar {
+    width: 339px;
+    position: relative;
+  }
+  
+  .App-header input {
+    padding: 0px 10px 0px 15px;
+    width: 310px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #E0E0E0;
+  }
+  
+  .App-header button {
+    padding: 0px 20px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    width: 107px;
+    height: 40px;
+    left: 225px;
+    top: 7px;
+    background-color: #27AE60;
+    border-radius: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .App-header button:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    
+  }
+
+  @media only screen and (min-width: 960px){
+    .App-header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90px;
+        width: 100%;
+    }
+  
+    .App-header h1 {
+        margin-left: 30px;
+    }
+  
+    .App-header h1 b {}
+  
+    .searchBar {
+        width: 349px;
+        right: 30px;
+    }
+    
+    .App-header input {
+        width: 321px;
+    }
+  
+    .App-header button{
+        position: absolute;
+        width: 107px;
+        height: 40px;
+        left: 235px;
+        top: 7px;
+    }
+}

@@ -5,114 +5,34 @@ body {
 }
 
 .App {
-  background-color: #f5f5f5;
-  text-align: center;
+  min-height: 100vh;
   min-height: 100vh;
 }
 
-.App-header {
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 139px;
+  background-color: #fff;
+  min-height: 920px;
 }
 
-.App-header h1 {
-  color: red;
-  font-size: 18px;
-  margin-top: 15px;
-}
 
-.App-header h1 b {
-  color:#333333;
-  font-size: 26px;
-}
-
-.searchBar {
-  width: 339px;
-  position: relative;
-}
-
-.App-header input {
-  padding: 0px 10px 0px 15px;
-  width: 310px;
-  height: 50px;
-  background-color: #FFFFFF;
-  border: 2px solid #E0E0E0;
-  border-radius: 8px;
-  font-size: 18px;
-  color: #E0E0E0;
-}
-
-.App-header button {
-  padding: 0px 20px;
-  border: none;
-  position: absolute;
-  z-index: 1;
-  width: 107px;
-  height: 40px;
-  left: 225px;
-  top: 7px;
-  background-color: #27AE60;
-  border-radius: 8px;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.App-header button:hover {
-  cursor: pointer;
-  filter: brightness(0.8);
-}
-
-main {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 955px;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   body {}
 
-  .App {}
+}
 
-  .App-header {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 90px;
-    width: 100%;
-  }
-
-  .App-header h1 {
-    margin-left: 50px;
-  }
-
-  .App-header h1 b {}
-
-  .searchBar {
-    right: 60px;
-  }
-  
-  .App-header input {
-    width: 321px;
-  }
-
-  .App-header button{
-    position: absolute;
-    width: 107px;
-    height: 40px;
-    left: 235px;
-    top: 7px;
-  }
-
-  .App-header button:hover {}
-
-  main {
-    flex-direction: row;
+@media only screen and (min-width: 960px){
+  .App {
+    
     height: 775px;
   }
-}
+
+  .mainContainer {
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+   min-height: 700px;
+   margin-top: 30px;
+  }}
