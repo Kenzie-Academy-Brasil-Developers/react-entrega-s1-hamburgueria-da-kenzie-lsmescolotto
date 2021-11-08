@@ -28,7 +28,7 @@
 @media only screen and (min-width: 1192px){
     .containerProducts {
         width: 64vw;
-        height: 100vh;
+        height: 730px;
         flex-wrap: wrap;
         align-content: space-between;
         justify-content: space-between;

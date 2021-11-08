@@ -26,12 +26,16 @@ function App() {
     { id: 6, name: 'Fanta', category: 'Bebidas', price: 4.99, img: 'https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png' },
   ]);
 
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState("");
   const [currentSale, setCurrentSale] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
 
   const showProducts = () => {
-    setProducts(products.filter(product => product.name === filteredProducts || product.category === filteredProducts))
+    if (filteredProducts === "") {
+      setProducts(products2)
+    } else {
+    setProducts(products2.filter(product => product.name.toLowerCase() === filteredProducts.toLowerCase() || product.category.toLowerCase() === filteredProducts.toLowerCase()))
+    }
   }
 
   const handleClick = (productId) => {
